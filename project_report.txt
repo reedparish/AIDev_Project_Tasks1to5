@@ -1,0 +1,19 @@
+The goal of this project was to analyze a dataset of AI-generated pull requests to understand what kinds of tasks agentic AI tools
+perform, especially in relation to security. I began by creating a GitHub repository to organize my code and outputs and then
+downloaded the dataset from HuggingFace. The project was completed in five structured steps, each producing a CSV file based on
+a different table in the dataset.
+
+In Tasks 1–4, I extracted and cleaned information from four main tables: pull request metadata, repository details, task types,
+and commit-level data. Each task involved selecting the required fields, renaming them according to the assignment, and saving
+the results as separate CSV files. Task 4 also included cleaning the diff data to remove special characters that could cause
+encoding problems. These tasks helped break the dataset into manageable, well-structured components.
+
+Task 5 combined the outputs from the earlier tasks to produce a final summary CSV. This file included the pull request ID, the
+agent that created it, the task type, and its confidence score. I also added a SECURITY column, which flags whether a pull
+request might be security-related by scanning its title and body for specific keywords. This automated step provided a quick
+way to identify which PRs could involve security issues without manual inspection.
+
+Overall, this project provided practice in data extraction, cleaning, merging, and classification. By organizing everything
+through both Python scripts and GitHub, I created a clear workflow that transformed raw dataset tables into meaningful CSV files.
+Completing Tasks 1–5 gave me a better understanding of how agentic AI tools operate within software development and how their
+pull requests can be analyzed for potential security relevance.
